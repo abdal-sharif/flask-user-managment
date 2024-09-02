@@ -1,0 +1,19 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Permissions</title>
+</head>
+<body>
+    <h3>Manage Permissions for Role ID {{ role_id }}</h3>
+    <form method="post" action="{{ url_for('manage_permissions', role_id=role_id) }}">
+        {% for perm in permissions %}
+            <input type="checkbox" name="permissions" value="{{ perm['id'] }}" 
+            {% if perm['id'] in assigned_perms %}checked{% endif %}>
+            {{ perm['module_name'] }}<br>
+        {% endfor %}
+        <button type="submit">Save Permissions</button>
+    </form>
+</body>
+</html> -->
